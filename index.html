@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Realistic Snake</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game-container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <span id="score">Score: 0</span>
+        <span id="highscore">High Score: 0</span>
+    </div>
+
+    <!-- GAME -->
+    <canvas
+        id="gameCanvas"
+        width="900"
+        height="550">
+    </canvas>
+
+    <!-- OVERLAY -->
+    <div id="overlay" class="overlay">
+
+        <h1 id="overlayTitle">
+            WORM HP
+        </h1>
+
+        <p id="overlaySubtitle">
+            HTML5 Canvas + JavaScript
+        </p>
+
+        <p id="overlayAction" class="highlight">
+            TEKAN MULAI UNTUK BERMAIN
+        </p>
+
+        <p class="small">
+            PC: PANAH | HP: TOMBOL
+        </p>
+
+    </div>
+
+    <!-- MOBILE CONTROLS -->
+    <div class="controls">
+
+        <button id="btnUp" class="btn">▲</button>
+
+        <div class="horizontal">
+
+            <button id="btnLeft" class="btn">◀</button>
+
+            <button id="btnDown" class="btn">▼</button>
+
+            <button id="btnRight" class="btn">▶</button>
+
+        </div>
+
+        <button id="btnPause" class="pause-btn">
+            II
+        </button>
+
+    </div>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
